@@ -37,17 +37,12 @@ jobs:
         with:
           # Only include this section if you wish to publish
           # your assets on Modrinth.
-          modrinth-id: placeholder
+          modrinth-id: derailed-tombstone-patch
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-
-          # Only include this section if you wish to publish
-          # your assets on CurseForge.
-          curseforge-id: placeholder
-          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
-            build/libs/*-@(dev|sources|javadoc).jar
+            #build/libs/*-@(dev|sources|javadoc).jar
           loaders: forge
           game-versions: 1.12.2
           java: |
