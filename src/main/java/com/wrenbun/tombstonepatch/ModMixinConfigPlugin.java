@@ -1,4 +1,4 @@
-package com.example.modid;
+package com.wrenbun.tombstonepatch;
 
 import net.minecraftforge.fml.common.Loader;
 import org.objectweb.asm.tree.ClassNode;
@@ -19,18 +19,11 @@ public class ModMixinConfigPlugin implements IMixinConfigPlugin {
         return null;
     }
 
-    /**
-     * An example of mod mixin
-     * The {@link org.spongepowered.asm.mixin.MixinEnvironment.Phase#MOD} allow the mixins being processed after modlist building
-     * Which allow calling {@link Loader#isModLoaded(String)}
-     * @param targetClassName Not important unless you are writing multi-target mixin
-     * @param mixinClassName The full mixin class name. Filtering with group name is the easiest solution here.
-     * @return If the mixin should apply
-     */
+    //for the sake of sanity if i ever do anything else
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         return switch (mixinClassName.split("\\.")[5]) {
-            case "hei" -> Loader.isModLoaded("jei");
+            case "tombstone" -> Loader.isModLoaded("tombstone");
             default -> true;
         };
     }

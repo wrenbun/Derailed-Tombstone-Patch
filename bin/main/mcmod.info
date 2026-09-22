@@ -1,0 +1,15 @@
+[{
+	"modid": "tombstonepatch",
+	"name": "Derailed Tombstone Patch",
+	"version": "1.0.0",
+	"mcversion": "1.12.2",
+	"description": "Fixes Corail Tombstone crashes on Cleanroom (applies the access transformer Tombstone ships but never loads).",
+	"authorList": ["Wrenbun"],
+	"credits": "",
+	"url": "",
+	"updateJSON": "",
+	"logoFile": "",
+	"modProperties": {
+		"issueTrackerUrl": ""
+	}
+}]
