@@ -37,7 +37,7 @@ jobs:
         with:
           # Only include this section if you wish to publish
           # your assets on Modrinth.
-          modrinth-id: derailed-tombstone-patch
+          modrinth-id: q5Easi4X
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
           files: |
